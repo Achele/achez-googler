@@ -1,0 +1,38 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header-menu {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.avatarPhoto {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+.menuItem {
+  margin: 0 0.8em;
+}
+
+.avatar-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.icon {
+  margin: 0 0.8em;
+}
+
+@media (min-width: 40rem) {
+  .header {
+    /* display: flex; */
+    justify-content: flex-end;
+  }
+  .mobile {
+    display: none;
+  }
+}
