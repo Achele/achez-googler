@@ -6,8 +6,10 @@ export default function SearchBar() {
   const handleSearch = (e) => {
     e.preventDefault();
     setSearch(e.target.value);
-    console.log(e.target.value);
+    e.target.value = "";
   };
+
+  const searchKey = (e) => e.key === "Enter" && handleSearch(e);
 
   return (
     <>
@@ -20,6 +22,8 @@ export default function SearchBar() {
           type="search"
           name="search"
           className="input-field"
+          value={search}
+          onKeyDown={searchKey}
           onChange={handleSearch}
         />
         <svg
@@ -72,7 +76,7 @@ export default function SearchBar() {
           </g>
         </svg>
       </form>
-      <span className="search-text">{search}</span>
+      <span className="search-text">{search && <p>{search}</p>}</span>
     </>
   );
 }
