@@ -87,6 +87,9 @@ button {
 footer {
   padding: 1em;
   background: #f2f2f2;
+  height: 80px;
+  width: 100vw;
+  margin-top: 172px;
 }
 
 .footer1 li,
