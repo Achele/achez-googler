@@ -1,3 +1,5 @@
+import leaf from "../assets/leaf.png";
+
 export default function Footer() {
   return (
     <footer>
@@ -9,7 +11,11 @@ export default function Footer() {
           <li>Business</li>
           <li>How Search works</li>
         </ul>
-        <p>Carbon natural since 2007</p>
+        <div className="carbon">
+          <img src={leaf} alt="" />
+          <p>Carbon natural since 2007</p>
+        </div>
+
         <ul className="footer2">
           <li>Privacy</li>
           <li>Terms</li>
